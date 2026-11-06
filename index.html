@@ -1,362 +1,110 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-```
-<title>Janhvi Dalavi | Portfolio</title>
-
-<!-- CSS -->
-<link rel="stylesheet" href="style/style.css">
-
-<!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-```
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="description" content="Janhvi Dalavi is a Computer Engineering student who enjoys building useful software and thoughtful web experiences.">
+  <title>Janhvi Dalavi — Computer Engineering Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
-
 <body>
-
-```
-<!-- Header -->
-<header>
-    <nav>
-        <h2 class="logo">Janhvi.</h2>
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="wordmark" href="#home" aria-label="Janhvi Dalavi, home">JD<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme"><span class="theme-icon" aria-hidden="true">☾</span></button>
+      </div>
     </nav>
-</header>
+  </header>
 
+  <main id="main">
+    <section class="hero wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> COMPUTER ENGINEERING · PUNE, INDIA</p>
+        <h1>Curious by nature.<br><span class="accent">Building with purpose.</span></h1>
+        <p class="hero-intro">Hey, I’m <strong>Janhvi Dalavi</strong> — a Computer Engineering student who loves coding, learning by building, and turning ideas into useful software.</p>
+        <p class="role-line"><span class="role-prefix">Currently exploring</span> <span id="typing" aria-live="polite">AI and machine learning</span><span class="cursor" aria-hidden="true">_</span></p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="resume/Janhvi_Resume.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-art reveal" aria-label="Decorative abstract illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card"><span class="art-kicker">A little about me</span><span class="art-monogram">J<span>D</span></span><span class="art-caption">Learn · Build · Repeat</span><span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✳</span></div>
+        <span class="art-note note-one">Pune, IN</span><span class="art-note note-two">Always learning ↗</span>
+      </div>
+      <a class="scroll-hint" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+    </section>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
+    <section class="section about-section" id="about">
+      <div class="wrap section-grid reveal">
+        <div><p class="eyebrow">01 / A LITTLE INTRO</p><h2 class="section-heading">I enjoy making<br>ideas <span class="accent">real.</span></h2></div>
+        <div class="about-copy"><p>I’m a third-year Computer Engineering student at <strong>Sinhgad Institute of Technology and Science (SITS), Pune</strong>. I enjoy learning how software works and building projects that solve practical problems.</p><p>I like coding, exploring how things work, and learning whatever I need to bring an idea to life. I pick up new concepts quickly, and I’m currently exploring <strong>AI and machine learning</strong> while looking for thoughtful ways technology can help with real problems.</p><p>My projects range from web applications and a movie-and-book recommender to student tools, a small game, and C++ programs. Each one gives me a chance to learn something new and make the next idea a little better.</p><p class="about-signoff">Curious, hands-on, and always learning. <span aria-hidden="true">✳</span></p></div>
+      </div>
+    </section>
 
-    <div class="hero-text">
-
-        <p class="intro">Hello, I'm</p>
-
-        <h1>Janhvi <span>Dalavi</span></h1>
-
-        <h2><span id="typing"></span></h2>
-
-        <p>
-            I am a passionate Computer Engineering student interested in Software Development,
-            Web Development, and Artificial Intelligence. I enjoy designing responsive websites
-            and building real-world applications using modern technologies.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="btn">View Projects</a>
-
-            <a href="resume/Janhvi_Resume.pdf"
-               class="btn btn-outline"
-               target="_blank">
-                Download Resume
-            </a>
-
+    <section class="section projects-section" id="projects">
+      <div class="wrap">
+        <div class="section-top reveal"><div><p class="eyebrow">02 / SELECTED WORK</p><h2 class="section-heading">Things I’ve <span class="accent">built.</span></h2></div><a class="text-link github-link" href="https://github.com/janhvi0207-cmd" target="_blank" rel="noopener">More on GitHub <span aria-hidden="true">↗</span></a></div>
+        <p class="section-lede reveal">All eight public repositories from my GitHub: web experiences, Python projects, AI concepts, and programming fundamentals.</p>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All <span>08</span></button>
+          <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web <span>03</span></button>
+          <button class="filter-button" type="button" data-filter="python" aria-pressed="false">Python <span>03</span></button>
+          <button class="filter-button" type="button" data-filter="cpp" aria-pressed="false">C++ <span>02</span></button>
+          <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI / ML <span>01</span></button>
         </div>
-
-    </div>
-
-
-    <div class="hero-image">
-        <img src="https://excelyourhealth.org/wp-content/uploads/2023/05/1354898.png"
-             alt="Janhvi Dalavi">
-    </div>
-
-</section>
-
-
-<!-- About -->
-<section id="about">
-
-    <h2 class="section-title">About Me</h2>
-
-    <div class="about-text">
-
-        <p>
-            Hi, I'm <strong>Janhvi Dalavi</strong>, a third-year Computer Engineering
-            student at <strong>Sinhgad Institute of Technology and Science (SITS), Pune</strong>.
-            I am passionate about technology and enjoy turning ideas into real-world applications.
-        </p>
-
-        <br>
-
-        <p>
-            I have built projects using <strong>Python, C++, Flask, HTML, CSS,
-            JavaScript, MySQL, and SQLite</strong>, including a Personal Finance Management
-            System, Student Management System, Banking System, and Palindrome Checker.
-            These projects have strengthened my problem-solving abilities and software
-            development skills.
-        </p>
-
-        <br>
-
-        <p>
-            I am particularly interested in <strong>Web Development, Software Development,
-            Artificial Intelligence, and Machine Learning</strong>. I enjoy designing clean,
-            responsive, and user-friendly websites while continuously learning new technologies.
-        </p>
-
-        <br>
-
-        <p>
-            My goal is to become a <strong>Software Developer</strong> and eventually
-            an <strong>AI Engineer</strong>, where I can build innovative solutions that
-            create real-world impact.
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- Education -->
-<section id="education">
-
-    <h2 class="section-title">Education</h2>
-
-    <div class="education-card">
-
-        <h3>Bachelor of Engineering (Computer Engineering)</h3>
-
-        <p>
-            <strong>College:</strong>
-            Sinhgad Institute of Technology and Science (SITS), Pune
-        </p>
-
-        <p>
-            <strong>Year:</strong>
-            Third Year (Semester V)
-        </p>
-
-        <p>
-            <strong>Expected Graduation:</strong>
-            2028
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- Skills -->
-<section id="skills">
-
-    <h2 class="section-title">Technical Skills</h2>
-
-    <div class="skills">
-
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Python</div>
-        <div class="skill">MongoDB</div>
-        <div class="skill">C/C++</div>
-        <div class="skill">Java</div>
-        <div class="skill">OOP</div>
-        <div class="skill">Flask</div>
-        <div class="skill">SQL</div>
-        <div class="skill">Git</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Responsive Web Design</div>
-        <div class="skill">VS Code</div>
-
-    </div>
-
-</section>
-
-
-<!-- Projects -->
-<section id="projects">
-
-    <h2 class="section-title">Projects</h2>
-
-    <div class="project-container">
-
-        <!-- Project 1 -->
-        <div class="project-card">
-
-            <h3>💰 MoneyNest - Personal Finance Management System</h3>
-
-            <p>
-                Developed a personal finance management web application using
-                <strong>Flask, Python, HTML, CSS, JavaScript, and SQLite</strong>.
-            </p>
-
-            <ul>
-                <li>Designed a responsive and user-friendly interface.</li>
-                <li>Implemented income, expense, and savings management.</li>
-                <li>Integrated SQLite database for secure data storage.</li>
-                <li>Built using Flask backend with dynamic web pages.</li>
-            </ul>
-
-            <p>
-                <strong>Technologies:</strong>
-                Flask, Python, HTML, CSS, JavaScript, SQLite
-            </p>
-
+        <div class="project-grid">
+          <article class="project-card project-feature reveal" data-category="web">
+            <div class="project-visual visual-finance"><span class="visual-label">01 — WEB APP</span><div class="finance-ui"><div class="ui-top"><i></i><i></i><i></i><b>money nest</b></div><div class="ui-balance"><small>AVAILABLE BALANCE</small><strong>₹ 24,680</strong><span>↑ 12.8% this month</span></div><div class="ui-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="visual-sticker">Save<br>smart ✳</span></div>
+            <div class="project-info"><div class="project-heading"><div><p class="project-type">BANKING WEB APP</p><h3>Money Nest Bank</h3></div><a class="project-arrow" href="https://github.com/janhvi0207-cmd/Money-Nest-Bank" target="_blank" rel="noopener" aria-label="View Money Nest Bank repository on GitHub">↗</a></div><p>A banking web application built with Python, Flask, and SQLite.</p><div class="tag-list"><span>Python</span><span>Flask</span><span>SQLite</span></div></div>
+          </article>
+          <article class="project-card reveal" data-category="python">
+            <div class="project-visual visual-students"><span class="visual-label">02 — DESKTOP APP</span><div class="student-ui"><div class="student-side"><b>✳</b><i></i><i></i><i></i></div><div class="student-main"><small>STUDENT DIRECTORY</small><strong>Good morning 👋</strong><div class="student-row"><span class="avatar">AS</span><span><b>Aarav Shah</b><small>Computer Engineering</small></span><span class="row-pill">Active</span></div><div class="student-row"><span class="avatar avatar-two">MK</span><span><b>Mira Kulkarni</b><small>Information Technology</small></span><span class="row-pill">Active</span></div></div></div></div>
+            <div class="project-info"><div class="project-heading"><div><p class="project-type">ACADEMIC RECORDS</p><h3>Student Management System</h3></div><a class="project-arrow" href="https://github.com/janhvi0207-cmd/Student-Management-System" target="_blank" rel="noopener" aria-label="View Student Management System repository on GitHub">↗</a></div><p>A Python, Tkinter, and MySQL application for managing student details, attendance, and marks.</p><div class="tag-list"><span>Python</span><span>Tkinter</span><span>MySQL</span></div></div>
+          </article>
+          <article class="project-card reveal" data-category="cpp">
+            <div class="project-visual visual-bank"><span class="visual-label">03 — C++</span><div class="bank-illustration"><span class="bank-sun"></span><span class="bank-building"><i></i><i></i><i></i></span><span class="bank-ground"></span><span class="bank-text">BANKING SYSTEM</span></div><span class="bank-code">class Account { ... }</span></div>
+            <div class="project-info"><div class="project-heading"><div><p class="project-type">OBJECT-ORIENTED PROGRAMMING</p><h3>Banking System</h3></div><a class="project-arrow" href="https://github.com/janhvi0207-cmd/banking_system_project" target="_blank" rel="noopener" aria-label="View Banking System repository on GitHub">↗</a></div><p>A menu-driven banking program with account creation, deposits, withdrawals, and balance checks.</p><div class="tag-list"><span>C++</span><span>OOP</span></div></div>
+          </article>
+          <article class="project-card reveal" data-category="cpp">
+            <div class="project-visual visual-palindrome"><span class="visual-label">04 — DATA STRUCTURES</span><div class="palindrome-art"><span class="pal-word">LEVEL</span><span class="pal-arrows">↔</span><div class="stack-box"><i>L</i><i>E</i><i>V</i></div><div class="queue-box"><i>L</i><i>E</i><i>V</i><b>→</b></div><span class="stack-label">STACK</span><span class="queue-label">QUEUE</span></div></div>
+            <div class="project-info"><div class="project-heading"><div><p class="project-type">DATA STRUCTURES</p><h3>Palindrome Checker</h3></div><a class="project-arrow" href="https://github.com/janhvi0207-cmd/Palindrome-checker" target="_blank" rel="noopener" aria-label="View Palindrome Checker repository on GitHub">↗</a></div><p>Checks whether a word reads the same forward and backward using stack and queue concepts.</p><div class="tag-list"><span>C++</span><span>Stack</span><span>Queue</span></div></div>
+          </article>
+          <article class="project-card reveal" data-category="python">
+            <div class="project-visual visual-snake"><span class="visual-label">05 — GAME</span><div class="snake-board"><span class="snake-piece p1"></span><span class="snake-piece p2"></span><span class="snake-piece p3"></span><span class="snake-piece p4"></span><span class="snake-food">✳</span><span class="snake-score">SCORE&nbsp; 008</span></div><span class="snake-note">one more round?</span></div>
+            <div class="project-info"><div class="project-heading"><div><p class="project-type">A CLASSIC, REBUILT</p><h3>Snake Game</h3></div><a class="project-arrow" href="https://github.com/janhvi0207-cmd/Snake-Game" target="_blank" rel="noopener" aria-label="View Snake Game repository on GitHub">↗</a></div><p>A small Snake game made in Python with Pygame-ce.</p><div class="tag-list"><span>Python</span><span>Pygame-ce</span></div></div>
+          </article>
+          <article class="project-card project-feature reveal" data-category="web">
+            <div class="project-visual visual-cinebook"><span class="visual-label">06 — RECOMMENDER</span><div class="cinebook-scene"><span class="cine-star">✳</span><span class="cine-label">YOUR NEXT<br>FAVOURITE</span><div class="cine-covers"><i>FILM<br>01</i><i>READ<br>02</i><i>FILM<br>03</i></div><span class="cine-match">MATCH FOUND ↗</span></div></div>
+            <div class="project-info"><div class="project-heading"><div><p class="project-type">RULE-BASED RECOMMENDER</p><h3>CineBook</h3></div><a class="project-arrow" href="https://github.com/janhvi0207-cmd/CineBook" target="_blank" rel="noopener" aria-label="View CineBook repository on GitHub">↗</a></div><p>A movie and book recommendation website that uses a transparent rule-based expert system to match people with stories and explain each recommendation.</p><div class="tag-list"><span>HTML & CSS</span><span>JavaScript</span><span>Rule-based system</span></div></div>
+          </article>
+          <article class="project-card reveal" data-category="python ai">
+            <div class="project-visual visual-medical"><span class="visual-label">07 — EXPERT SYSTEM</span><div class="medical-scene"><span class="medical-cross">+</span><span class="medical-node node-a">FACTS</span><span class="medical-node node-b">RULES</span><span class="medical-node node-c">RESULT</span><span class="medical-path path-a"></span><span class="medical-path path-b"></span><span class="medical-caption">FORWARD + BACKWARD CHAINING</span></div></div>
+            <div class="project-info"><div class="project-heading"><div><p class="project-type">EDUCATIONAL AI CONCEPT</p><h3>Medical Diagnosis Expert System</h3></div><a class="project-arrow" href="https://github.com/janhvi0207-cmd/AI-Medical-Diagnosis-Expert-System" target="_blank" rel="noopener" aria-label="View AI Medical Diagnosis Expert System repository on GitHub">↗</a></div><p>An educational Python and Flask project demonstrating forward and backward chaining with illustrative rules. It is not a medical diagnostic tool.</p><div class="tag-list"><span>Python</span><span>Flask</span><span>Expert systems</span></div></div>
+          </article>
+          <article class="project-card reveal" data-category="web">
+            <div class="project-visual visual-portfolio"><span class="visual-label">08 — PORTFOLIO</span><div class="portfolio-window"><div class="portfolio-window-top"><i></i><i></i><i></i><span>janhvi.dev</span></div><div class="portfolio-window-body"><b>JD<span>.</span></b><i></i><i></i><i></i><em>LEARN · BUILD · REPEAT</em></div></div></div>
+            <div class="project-info"><div class="project-heading"><div><p class="project-type">PERSONAL WEBSITE</p><h3>Portfolio Website</h3></div><a class="project-arrow" href="https://github.com/janhvi0207-cmd/Portfolio" target="_blank" rel="noopener" aria-label="View Portfolio repository on GitHub">↗</a></div><p>My personal portfolio, built with HTML, CSS, and JavaScript to share my work, interests, and ways to connect.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          </article>
         </div>
+        <p class="filter-empty" hidden>No projects in this category yet.</p>
+      </div>
+    </section>
 
+    <section class="section skills-section" id="skills"><div class="wrap section-grid reveal"><div><p class="eyebrow">03 / MY TOOLKIT</p><h2 class="section-heading">Tools I work <span class="accent">with.</span></h2><p class="section-lede">A growing set of tools for learning, problem solving, and making things.</p></div><div class="skills-content"><div class="skill-group"><h3>LANGUAGES</h3><div class="skill-pills"><span>Python</span><span>C++</span><span>JavaScript</span><span>HTML & CSS</span><span>SQL</span></div></div><div class="skill-group"><h3>FRAMEWORKS & DATA</h3><div class="skill-pills"><span>Flask</span><span>Tkinter</span><span>MySQL</span><span>SQLite</span></div></div><div class="skill-group"><h3>CONCEPTS & TOOLS</h3><div class="skill-pills"><span>AI / ML (exploring)</span><span>Object-oriented programming</span><span>Data structures</span><span>Git & GitHub</span><span>Responsive design</span></div></div></div></div></section>
 
-        <!-- Project 2 -->
-        <div class="project-card">
+    <section class="section education-section"><div class="wrap education-row reveal"><div><p class="eyebrow">04 / EDUCATION</p><h2 class="section-heading">Learning in <span class="accent">progress.</span></h2></div><div class="education-card"><span class="education-icon" aria-hidden="true">✳</span><div><p class="project-type">EXPECTED GRADUATION · 2028</p><h3>Bachelor of Engineering</h3><p>Computer Engineering · Sinhgad Institute of Technology and Science (SITS), Pune</p></div></div></div></section>
 
-            <h3>🎓 Student Management System</h3>
-
-            <p>
-                Developed a Student Management System using
-                <strong>Python, Tkinter, and MySQL</strong> for managing academic records.
-            </p>
-
-            <ul>
-                <li>Implemented CRUD operations for student records.</li>
-                <li>Managed attendance and subject-wise marks.</li>
-                <li>Integrated MySQL database with Tkinter GUI.</li>
-                <li>Added secure admin login authentication.</li>
-            </ul>
-
-            <p>
-                <strong>Technologies:</strong>
-                Python, Tkinter, MySQL
-            </p>
-
-        </div>
-
-
-        <!-- Project 3 -->
-        <div class="project-card">
-
-            <h3>🏦 Banking System</h3>
-
-            <p>
-                Developed a Banking System mini project in
-                <strong>C++ using Object-Oriented Programming.</strong>
-            </p>
-
-            <ul>
-                <li>Implemented account creation, deposit, withdrawal, and balance inquiry.</li>
-                <li>Applied OOP concepts like Classes, Objects, Encapsulation, and Abstraction.</li>
-                <li>Designed a menu-driven console application.</li>
-            </ul>
-
-            <p>
-                <strong>Technologies:</strong>
-                C++, Object-Oriented Programming
-            </p>
-
-        </div>
-
-
-        <!-- Project 4 -->
-        <div class="project-card">
-
-            <h3>🔤 Palindrome Checker</h3>
-
-            <p>
-                Developed a palindrome checker using
-                <strong>C++, Stack, and Queue</strong> data structures.
-            </p>
-
-            <ul>
-                <li>Implemented LIFO and FIFO operations.</li>
-                <li>Compared characters for palindrome verification.</li>
-                <li>Applied data structures and string handling concepts.</li>
-            </ul>
-
-            <p>
-                <strong>Technologies:</strong>
-                C++, Stack, Queue
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- Contact -->
-<section id="contact">
-
-    <h2 class="section-title">Get In Touch</h2>
-
-    <div class="contact-card">
-
-        <p>
-            📧 <strong>Email:</strong>
-            <a href="mailto:janhvi0207@gmail.com">
-                janhvi0207@gmail.com
-            </a>
-        </p>
-
-        <p>
-            📱 <strong>Phone:</strong>
-            <a href="tel:+919021353209">
-                +91 9021353209
-            </a>
-        </p>
-
-        <p>
-            📍 <strong>Location:</strong>
-            Pune, Maharashtra
-        </p>
-
-        <p>
-            💻 <strong>GitHub:</strong>
-            <a href="https://github.com/janhvi0207-cmd"
-               target="_blank">
-                github.com/janhvi0207-cmd
-            </a>
-        </p>
-
-        <p>
-            🔗 <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/janhvi-dalavi-2527373a8/"
-               target="_blank">
-                linkedin.com/in/janhvi-dalavi-2527373a8
-            </a>
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- Footer -->
-<footer>
-
-    <h3>Janhvi Dalavi</h3>
-
-    <p>
-        Computer Engineering Student |
-        Aspiring Software Developer |
-        AI & Web Development Enthusiast
-    </p>
-
-    <p>© 2026 Janhvi Dalavi. All Rights Reserved.</p>
-
-</footer>
-
-
-<!-- JavaScript -->
-<script src="script/script.js"></script>
-```
-
+    <section class="contact-section" id="contact"><div class="wrap contact-inner reveal"><p class="eyebrow">05 / SAY HELLO</p><h2>Have an idea?<br><span class="accent">Let’s talk.</span></h2><p>I’m always happy to connect, share ideas, or talk about something I’m building.</p><div class="contact-actions"><a class="button button-light" href="mailto:janhvi0207@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="contact-social" href="tel:+919021353209">+91 90213 53209</a><a class="contact-social" href="https://www.linkedin.com/in/janhvi-dalavi-2527373a8/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="contact-social" href="https://github.com/janhvi0207-cmd" target="_blank" rel="noopener">GitHub ↗</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="wordmark" href="#home">JD<span>.</span></a><p>Made with curiosity in Pune, India.</p><p>© <span id="year">2026</span> Janhvi Dalavi</p></div></footer>
+  <script src="script/script.js" defer></script>
 </body>
 </html>
